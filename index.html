@@ -1,6 +1,10 @@
+
 <body>
   <center>
+    <br>
+    <br>
     <h1>Otis Gordon</h1>
+    <br>
     <h2 > reach out to your loved ones </h2>
    </center>
 
@@ -13,6 +17,7 @@
   .menu{
     background-color: #f0efdf;
     height: 200px;
+    opacity: 75%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -48,6 +53,8 @@
   <a href="#">other</a>
 </nav>
 
+
+
 <style>
 
   .gallery{
@@ -79,12 +86,21 @@
   @media (max-width: 630px){
     .gallery>img{
       grid-template-columns: 1fr 1fr;
+      transition: .gallery 10s ease-in-out;
     }
     
   }
   
-</style>
+body:hover .gallery { 
+  width: 50%;
   
+  
+  }
+  
+</style>
+
+
+
   <section class="gallery">
     <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
     <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
@@ -101,7 +117,6 @@
     <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
     <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
 <!--     <div style="Screen Shot 2020-12-17 at 3.27.00 PM.png" ></div> -->
-
   </section>
 
 
