@@ -4,14 +4,15 @@
     <h2 > reach out to your loved ones </h2>
    </center>
 
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annnie dancing">
+  <img src="Screen Shot 2020-12-17 at 3.17.29 PM.png" alt="Annnie dancing" width="1010">
 </body>
+
+<body style="background-color:#b4cac1;"></body>
 
 <style>
   .menu{
     background-color: #eed8ae;
-    height: 100px;
-    width: 2250px;
+    height: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -46,30 +47,49 @@
   <a href="#">music</a>
   <a href="#">thoughts</a>
   <a href="#">other</a>
-  
 </nav>
 
 <style>
+
   .gallery{
     display: grid;
-    grid-template-columns: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
   }
   
-  .gallery > div{
+  .gallery > img{
     
+    width: 400px;
+  /* background-color: #c0cbc0;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+     */
+  }
+  
+/*  basically media queries is when u dont want the space to get too tight if you resize the window
+  can use this to target a certain thing --> only shows up when you print, or when ur on your comptuer
+  these grids also can bound images, movies etc.*/
+
+  @media (max-width: 480px){
+    .gallery{
+      grid-template-columns: 1fr ;
+    }
     
   }
-
+  
 </style>
   
   <section class="gallery">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
+    <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
+    <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
+    <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
+    <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
+    <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
+    <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
+
   </section>
 
 
