@@ -1,119 +1,66 @@
 <!DOCTYPE html>
-<body>
+<nav class="title">
+<p>
   <center>
-    <br>
-    <br>
-    <h1>Otis Gordon</h1>
-    <br>
-    <h2> reach out to your loved ones </h2>
+
+  Otis Gordon
+  
   </center>
+  
+  </p>
+</nav>
 
-</body>
-
-
-<style>
-  .menu {
-    background-color: #f0efdf;
-    height: 200px;
-    opacity: 75%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-  }
-
-  .menu>a {
-    color: hsl(80, 30%, 50%);
-    font-family: sans-serif;
-    font-size: 24px;
-    text-decoration: none;
-
-  }
-
-  .menu>a:hover {
-    color: hsl(200, 60%, 50%);
-    font-size: 40px;
-    border-bottom: 05px solid hsl(240, 10%, 60%);
-  }
-
-
-  @media (max-width: 400px) {
-    .menu {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-</style>
-
-<nav class="menu">
-  <a href="video.html">videos</a>
+<nav class="hello">
   <a href="#">music</a>
-  <a href="#">thoughts</a>
-  <a href="#">other</a>
+  <a href="#">art</a>
+  <a href="#">vibes</a>
 </nav>
 
 
-
 <style>
-  .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    max-width: 6000px;
-    margin: 50 auto;
+  .hello{
+    position: absolute;
+    right: auto;
+    width: 300px;
+    flex-grow: 4;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+  }
+  .hello>a{
+    font-size: 200px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #6da0d6;
+    
+  }
+  
+  .hello>a:hover{
+    color: #94b4d6;
+    animation-name: nice;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+/*     animation-duration: 2s;
+    animation: fadeIn 1s ease-in-out 3s;
+  animation-fill-mode: forwards;   */
+ 
+    
   }
 
-  .gallery>img {
+  @keyframes nice {
+  from {font-size: 200px;}
+  to {font-size: 250px;}
+}
 
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-
-    /* background-color: #c0cbc0;
-    border: 2px solid black;
-    padding: 20px;
-    text-align: center;
-    font-family: monospace;
-    font-size: 18px;
-     */
+  .title{
+    font-size: 50px;
+    font-kerning: normal;
+    font-variant-caps: small-caps;
+    
   }
 
-  /*  basically media queries is when u dont want the space to get too tight if you resize the window
-  can use this to target a certain thing --> only shows up when you print, or when ur on your comptuer
-  these grids also can bound images, movies etc.*/
 
-  @media (max-width: 630px) {
-    .gallery>img {
-      grid-template-columns: 1fr 1fr;
-      transition: .gallery 10s ease-in-out;
-    }
 
-  }
-
-  body:hover .gallery {
-    opacity: 40%;
-    color: blue;
-
-  }
 </style>
-
-
-
-<section class="gallery">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <img src="Screen Shot 2020-12-17 at 3.27.00 PM.png" alt="Annie">
-  <!--     <div style="Screen Shot 2020-12-17 at 3.27.00 PM.png" ></div> -->
-</section>
